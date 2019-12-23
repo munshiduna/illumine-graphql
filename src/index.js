@@ -8,7 +8,14 @@ const startServer = async () => {
 	const server = new ApolloServer({
 		modules: [
 			require('./modules/server'),
+			require('./modules/user'),
 		]
+	});
+
+	await mongoose.connect("mongodb://localhost:27017/illumine", {
+		useCreateIndex: true,
+		useNewUrlParser: true,
+		useUnifiedTopology: true,
 	});
 
 	server.applyMiddleware({ app });
