@@ -10,8 +10,17 @@ const UserSchema = new Schema({
 		index: true,
 		lowercase: true,
 		trim: true,
+		collation: { locale: 'en', strength: 2 },
 	},
 	password: {
+		type: Schema.Types.String,
+		required: true,
+	},
+	firstName: {
+		type: Schema.Types.String,
+		required: true,
+	},
+	lastName: {
 		type: Schema.Types.String,
 		required: true,
 	},
