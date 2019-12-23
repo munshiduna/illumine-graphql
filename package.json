@@ -1,0 +1,10 @@
+{
+  "name": "illumine-graphql",
+  "version": "1.0.0",
+  "description": "Illumine GraphQL server with Apollo + Express",
+  "main": "src/index.js",
+  "repository": "https://github.com/munshiduna/illumine-graphql",
+  "author": "@munshiduna",
+  "license": "MIT",
+  "private": false
+}
