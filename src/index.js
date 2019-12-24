@@ -10,6 +10,8 @@ const startServer = async () => {
 			require('./modules/server'),
 			require('./modules/user'),
 			require('./modules/branch'),
+			require('./modules/direction'),
+			require('./modules/course'),
 		]
 	});
 
