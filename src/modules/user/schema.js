@@ -23,7 +23,6 @@ const typeDefs = gql`
 	}
 
 	type Profile {
-		id: ID!
 		fullName: String
 		userName: String!
 	}
