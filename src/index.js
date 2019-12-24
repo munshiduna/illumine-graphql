@@ -9,10 +9,11 @@ const startServer = async () => {
 		modules: [
 			require('./modules/server'),
 			require('./modules/user'),
+			require('./modules/branch'),
 		]
 	});
 
-	await mongoose.connect("mongodb://localhost:27017/illuminate", {
+	await mongoose.connect("mongodb://localhost:27017/illumine", {
 		useCreateIndex: true,
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
