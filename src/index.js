@@ -12,7 +12,7 @@ const startServer = async () => {
 		]
 	});
 
-	await mongoose.connect("mongodb://localhost:27017/ill", {
+	await mongoose.connect("mongodb://localhost:27017/illuminate", {
 		useCreateIndex: true,
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
